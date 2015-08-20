@@ -5,11 +5,30 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+    c<-NULL
+    list(mat=x, cache=c)
 }
 
 
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-}
+
+  # check the cache for the inverse.
+  if (!is.na(x$cache))
+  {
+    res<-x$cachen
+  }
+  else
+  {
+    res<-solve(x$mat, ...)
+    x$cache = res
+  }
+    # if it is cahced, use it,
+  
+  #if not..
+          ## Return a matrix that is the inverse of 'x'
+
+  res
+  
+  }
