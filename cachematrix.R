@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+# These functions are used to create a special list that will contain a matrix, and its inverse.  Matrices
+# will not be inverted until the cacheSolve function is used.  Because inversion can be very expensive for large
+# matrices, cahceSolve is used to compute + store the inverse of a matrix so that it doesn't need to be computed again.
 
 # Creates a list suitable for caching a matrix, and its inverse.
 # There is no 'set' function as these items should be considered immutable.
